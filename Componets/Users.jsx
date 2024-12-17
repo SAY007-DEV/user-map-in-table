@@ -19,7 +19,12 @@ function Users() {
   if(loading){
     return <div><h3>Loading....</h3></div>
   }
-  
+   
+
+  const delet=()=>{
+
+  }
+
   return (
     <> 
 
@@ -33,6 +38,7 @@ function Users() {
             <th>Name</th>
             <th>AGE</th>
             <th>Phone</th>
+            <th>Delete</th>
             
           </tr>
         </thead>
@@ -43,6 +49,7 @@ function Users() {
               <td>{user.name}</td>
               <td>{user.age}</td>
               <td>{user.phno}</td>
+              <td><button onClick={delet}>Delete</button></td>
               
             </tr>
           ))}
